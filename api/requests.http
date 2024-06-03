@@ -1,0 +1,27 @@
+### Local - HTTP: 200
+GET http://localhost:8080/?cep=72547240
+Host: localhost:8080
+Accept: application/json
+
+### Local - HTTP: 422
+GET http://localhost:8080/?cep=72547
+Host: localhost:8080
+Accept: application/json
+
+### Local - HTTP: 404
+GET http://localhost:8080/?cep=72547249
+Host: localhost:8080
+Accept: application/json
+
+
+### Cloud run - HTTP: 200
+
+GET https://cloudrun-goexpert-z35ax4go6q-uc.a.run.app/?cep=72547240
+
+### Cloud run - HTTP: 422
+
+GET https://cloudrun-goexpert-z35ax4go6q-uc.a.run.app/?cep=72547
+
+### Cloud run - HTTP: 404
+
+GET https://cloudrun-goexpert-z35ax4go6q-uc.a.run.app/?cep=72547249

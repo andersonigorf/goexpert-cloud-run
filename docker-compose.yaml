@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - ./.env:/.env
+
+    ports:
+      - "8080:8080"
